@@ -25,7 +25,7 @@ struct typeEmplacement {
 // Variable globale (declaree aussi dans type_emplacement.c)
 extern struct typeEmplacement TE;
 
-// Déclaration des fonctions
+// Dï¿½claration des fonctions
 
 int verification(int id);
 void ajouterTypeEmplacement();

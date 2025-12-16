@@ -1,7 +1,7 @@
 /*
    PROGRAMME : Gestion des type_emplacement
-   Auteur   : TCHINDOU Felicien ;COMADAN Kokou Ilénin Jacques
-   Objet    : Implémente les fonctions pour ajouter, modifier, supprimer,
+   Auteur   : TCHINDOU Felicien ;COMADAN Kokou Ilï¿½nin Jacques
+   Objet    : Implï¿½mente les fonctions pour ajouter, modifier, supprimer,
               consulter et lister les type_emplacement dans un fichier texte.
  */
 
@@ -18,7 +18,8 @@ struct typeEmplacement TE;
 
 //VERIFICATION ID
 
-int verification(int id) {
+int verification(int id)
+{
     FILE *pf = fopen("type_emplacement.txt", "r");
     if (pf == NULL) {
         return -1; // Fichier encore vide -> aucun ID n'existe
@@ -41,7 +42,8 @@ int verification(int id) {
 
 //AJOUTER UN TYPE_EMPLACEMENT
 
-void ajouterTypeEmplacement() {
+void ajouterTypeEmplacement() 
+{
     int idTypeEmplacement, verif;
 
     printf("\n==================================\n");
@@ -81,7 +83,8 @@ void ajouterTypeEmplacement() {
 
 //MODIFIER UN TYPE_EMPLACEMENT
 
-modifierTypeEmplacement() {
+void modifierTypeEmplacement() 
+{
     int idTypeEmplacement, verif;
 
     printf("\n=======================================\n");
@@ -129,7 +132,8 @@ modifierTypeEmplacement() {
 
 //SUPPRIMER UN TYPE_EMPLACEMENT
 
-void supprimerTypeEmplacement() {
+void supprimerTypeEmplacement() 
+{
     int idTypeEmplacement, verif;
 
     printf("\n======================================\n");
@@ -172,7 +176,8 @@ void supprimerTypeEmplacement() {
 
 //CONSULTER UN TYPE EMPLACEMENT
 
-void consulterTypeEmplacement() {
+void consulterTypeEmplacement() 
+{
     int idTypeEmplacement, verif;
 
     printf("\n=======================================\n");
@@ -211,7 +216,8 @@ void consulterTypeEmplacement() {
 
 //LISTER TOUS LES TYPES
 
-void listerTypeEmplacement() {
+void listerTypeEmplacement() 
+{
     FILE *pf = fopen("type_emplacement.txt", "r");
 
     printf("\n==================================\n");
